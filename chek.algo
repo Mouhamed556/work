@@ -1,0 +1,31 @@
+ALGORITHM checkpoint
+VAR
+    nV, nW, l, i:INTEGER
+    phrase:STRING
+BEGIN
+    i:=0;
+    nV:=0;
+    nW:=0;
+    l:=0
+    Read(phrase)
+    WHILE (phrase[i] <>".") DO
+        l:=l+1
+    IF (phrase[i]=" ") THE
+    N
+        nW:=nW + 1
+    END_IF
+    IF (phrase[i] in "aeuioAEUIO") THEN
+    nV:=nV +1
+    END_IF
+    i:=i+1
+    END_WHILE
+    IF (phrase[l-1]=" ")THEN
+    nw:=nw+1
+    l:=l+1
+    END_IF
+    write("Number of vowels", nV)
+    write("Number of words", nW+1)
+    write("Number of characters", l+1)
+END
+
+
